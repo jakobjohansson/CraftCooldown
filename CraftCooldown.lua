@@ -144,7 +144,7 @@ optionsFrame:RegisterEvent("UNIT_INVENTORY_CHANGED")
 
 
 function optionsFrame:OnEvent(event, arg1)
-	if event == "ADDON_LOADED"
+	if event == "ADDON_LOADED" and arg1 == addonName
 	then
 		init()
 	elseif event == 'BAG_UPDATE' or event == 'BAG_UPDATE_COOLDOWN' or event == 'BAG_OPEN'
